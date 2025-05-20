@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "./modules";
 
 * {
   margin: 0;
@@ -21,13 +22,43 @@ h2 {
 .flex {
    display: flex;
    justify-content: space-between;
+   align-items: center;
+}
+
+button, a {
+   cursor: pointer;
+   text-decoration: none;
+   background-color: transparent;
+   border: none;
+   color: $dark-white;
+   font-family: 'OpenSansRegular', Courier, monospace;
+}
+
+button {
+   border-radius: 4px;
+}
+
+li {
+   list-style: none;
 }
 
 body {
    max-width: $screen-xl;
    overflow: hidden;
    margin: 0 auto;
-   background-color: $whire-grey;
+   background-color: $white-grey;
    color: $light-black;
+   font-family: 'OpenSansRegular', Courier, monospace;
 }
 
+header, footer {
+   background-color: $light-black;
+   color: $dark-white;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+a:active {
+   font-weight: 700;
+}

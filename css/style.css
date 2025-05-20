@@ -1,3 +1,76 @@
+header .wrapper {
+  max-width: 1320px;
+  padding: 22px 0;
+  margin: 0 auto;
+}
+header .wrapper .header-info__text {
+  color: #a8a8a8;
+}
+header .wrapper .header-info__actions {
+  gap: 26px;
+}
+header .wrapper .header-info__actions-btn {
+  border: 1px solid #5a5a5a;
+  padding: 5px 10px;
+}
+header .wrapper .header-info__actions-btn-text {
+  margin-left: 9px;
+  font-size: 14px;
+  color: #eeeeee;
+}
+header .wrapper .header-info__actions-btn:hover {
+  border-color: #ffffff;
+}
+header .wrapper .header-info__actions-btn:active {
+  background-color: #404040;
+}
+header .wrapper .header-info__actions-links {
+  gap: 15px;
+}
+header .wrapper .header-info__actions-links .line {
+  height: 16px;
+  width: 1px;
+  background-color: #404040;
+}
+header .wrapper .header-info__actions-links-link {
+  font-size: 14px;
+}
+header .wrapper .header-main-nav {
+  gap: 10rem;
+}
+header .wrapper .header-main-nav__nav {
+  gap: 33px;
+}
+header .wrapper .header-main-nav__nav-item {
+  font-size: 16px;
+}
+header .wrapper .header-main-bnt {
+  gap: 17px;
+}
+header .wrapper .header-main-bnt__login {
+  padding: 5px 20px;
+  border: 1px solid #cd0511;
+  font-size: 16px;
+}
+header .wrapper .header-main-bnt__login:hover {
+  background-color: #404040;
+}
+header .wrapper .header-main-bnt__login:active {
+  color: #cd0511;
+}
+header .wrapper .header-main-bnt__register {
+  padding: 5px 20px;
+  background-color: #179149;
+  border: 1px solid #179149;
+  font-size: 16px;
+}
+header .wrapper .header-main-bnt__register:hover {
+  background-color: #161616;
+}
+header .wrapper .header-main-bnt__register:active {
+  color: #179149;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +92,24 @@ h2 {
 .flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+button, a {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  color: #eeeeee;
+  font-family: "OpenSansRegular", Courier, monospace;
+}
+
+button {
+  border-radius: 4px;
+}
+
+li {
+  list-style: none;
 }
 
 body {
@@ -27,6 +118,20 @@ body {
   margin: 0 auto;
   background-color: #f4f4f4;
   color: #161616;
+  font-family: "OpenSansRegular", Courier, monospace;
+}
+
+header, footer {
+  background-color: #161616;
+  color: #eeeeee;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

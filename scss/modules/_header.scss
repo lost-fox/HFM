@@ -1,0 +1,98 @@
+@use "../variables" as *;
+
+header {
+   .wrapper {
+      max-width: 1320px;
+      padding: 22px 0;
+      margin: 0 auto;
+
+      .header-info {
+         &__text {
+            color: $light-grey;
+         }
+
+         &__actions {
+            gap: 26px;
+
+            &-btn {
+               border: 1px solid $grey;
+               padding: 5px 10px;
+
+               &-text {
+                  margin-left: 9px;
+                  font-size: 14px;
+                  color: $dark-white;
+               }
+
+               &:hover {
+                  border-color: $white;
+               }
+               &:active {
+                  background-color: $dark-grey;
+               }
+            }
+
+            &-links {
+              gap: 15px; 
+
+              .line {
+                  height: 16px;
+                  width: 1px;
+                  background-color: $dark-grey;
+              }
+
+              &-link {
+               font-size: 14px;
+              }
+            }
+         }
+      }
+
+      .header-main {
+         &-nav {
+            gap: 10rem;
+
+            &__nav{
+               gap: 33px;
+
+               &-item {
+                  font-size: 16px;
+               }
+            }
+         }
+
+         &-bnt {
+            gap: 17px;
+
+            &__login {
+               padding: 5px 20px;
+               border: 1px solid $red;
+               font-size: 16px;
+
+               &:hover {
+                  background-color: $dark-grey;
+               }
+
+               &:active {
+                  color: $red;
+               }
+            }
+
+            &__register {
+               padding: 5px 20px;
+               background-color: $green;
+               border: 1px solid $green;
+               font-size: 16px;
+
+                &:hover {
+                  background-color: $light-black;
+               }
+
+               &:active {
+                  color: $green;
+               }
+            }
+         }
+      }
+   }
+}
