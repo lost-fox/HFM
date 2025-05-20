@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+h1 {
+  font-family: "SofiaSansBold", Courier, monospace;
+}
+
+h2 {
+  font-family: "SofiaSansRegular", Courier, monospace;
+  color: #000000;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  max-width: 1800px;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  color: #161616;
+}
+
+/*# sourceMappingURL=style.css.map */

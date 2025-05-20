@@ -1,0 +1,25 @@
+@use "./breakpoints";
+
+@mixin sm {
+   @media (max-width: #{breakpoints.$screen-sm}) {
+      @content;
+   }
+}
+
+@mixin md {
+   @media (max-width: #{breakpoints.$screen-md}) {
+      @content;
+   }
+}
+
+@mixin lg {
+   @media (max-width: #{breakpoints.$screen-lg}) {
+      @content;
+   }
+}
+
+@mixin xl {
+   @media (max-width: #{breakpoints.$screen-xl}) {
+      @content;
+   }
+}

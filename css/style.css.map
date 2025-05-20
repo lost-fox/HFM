@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/style.scss","../scss/variables/_colors.scss","../scss/variables/_breakpoints.scss"],"names":[],"mappings":"AAEA;EACE;EACA;;;AAGF;EACG;;;AAGH;EACG;;;AAGH;EACG;EACA,OChBK;;;ADmBR;EACG;EACA;;;AAGH;EACG,WEpBS;EFqBT;EACA;EACA,kBCzBU;ED0BV,OC9BW","file":"style.css"}
