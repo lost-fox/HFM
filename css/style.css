@@ -121,7 +121,7 @@ header .wrapper .header-main-bnt__burger {
 .lorem {
   width: 100%;
   padding: 80px 0;
-  background: url(../assets/img/background.png) no-repeat center center;
+  background: url("../assets/img/background.png") no-repeat center center;
   background-size: cover;
 }
 .lorem__title {
