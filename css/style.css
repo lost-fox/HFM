@@ -469,17 +469,37 @@ header .wrapper .header-main-bnt__burger {
 .sed-main {
   gap: 7rem;
 }
+@media (max-width: 1440px) {
+  .sed-main {
+    flex-direction: column;
+    justify-content: center !important;
+  }
+}
+@media (max-width: 768px) {
+  .sed-main {
+    width: 100%;
+  }
+}
 .sed-main__cards {
   flex-direction: column;
   gap: 20px;
+  position: relative;
 }
 .sed-main__cards-card {
+  position: relative;
   width: 600px;
   padding: 30px 35px;
   background-color: #ffffff;
   border-radius: 20px;
   justify-content: flex-start !important;
   gap: 32px;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .sed-main__cards-card {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 .sed-main__cards-card-img {
   display: block;
@@ -511,6 +531,25 @@ header .wrapper .header-main-bnt__burger {
 .sed-main__cards-card-info-text--red {
   color: #cd0511;
 }
+.sed-main__cards-card-banner {
+  position: absolute;
+  top: 25px;
+  right: -60px;
+  width: 225px;
+  height: 46px;
+  background: linear-gradient(90deg, #fcd678 0%, #bc8c2f 100%);
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  z-index: 1;
+}
+.sed-main__cards-card-banner-prize {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "OpenSansBold", Courier, monospace;
+}
 .sed-main__info-title {
   font-size: 25px;
   font-family: "OpenSansBold", Courier, monospace;
@@ -521,22 +560,34 @@ header .wrapper .header-main-bnt__burger {
   margin-top: 5rem;
   border-collapse: collapse;
 }
+@media (max-width: 768px) {
+  .sed-main__info-table {
+    width: 100%;
+  }
+}
 .sed-main__info-table-head {
   width: 100%;
   font-family: "OpenSansBold", Courier, monospace;
   color: #cd0511;
 }
-.sed-main__info-table th {
+.sed-main__info-table-body {
+  width: 100%;
+  font-size: 16px;
+  line-height: 5rem;
+}
+.sed-main__info-table th, .sed-main__info-table td {
   line-height: 5rem;
   border-bottom: 1px solid #dedede;
   text-align: left;
+  font-size: 16px;
 }
-.sed-main__info-table th:first-child {
+.sed-main__info-table th:first-child, .sed-main__info-table td:first-child {
   width: 100%;
   padding-left: 21px;
 }
-.sed-main__info-table th:last-child {
+.sed-main__info-table th:last-child, .sed-main__info-table td:last-child {
   width: 102px;
+  font-family: "OpenSansBold", Courier, monospace;
 }
 .sed-main__info-text {
   margin-top: 22px;

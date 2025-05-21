@@ -13,17 +13,34 @@
    &-main {
       gap: 7rem;
 
+      @include lg {
+         flex-direction: column;
+         justify-content: center !important;
+      }
+
+      @include md {
+         width: 100%;
+      }
+
       &__cards {
          flex-direction: column;
          gap: 20px;
+         position: relative;
 
          &-card {
+            position: relative;
             width: 600px;
             padding: 30px 35px;
             background-color: $white;
             border-radius: 20px;
             justify-content: flex-start !important;
             gap: 32px;
+            overflow: hidden;
+
+            @include md {
+              width: 100%;
+              flex-direction: column;
+            }
 
             &-img {
                display: block;
@@ -62,6 +79,27 @@
                 }
                }
             }
+
+            &-banner {
+              position: absolute;
+               top: 25px;
+               right: -60px;
+               width: 225px;
+               height: 46px;
+               background: $gold;
+               transform: rotate(45deg);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               border-radius: 4px;
+               z-index: 1;
+
+               &-prize {
+                  color: $white;
+                  font-size: 24px;
+                  font-family: 'OpenSansBold', Courier, monospace;
+               }
+            }
          }
       }
 
@@ -76,22 +114,36 @@
             width: 650px;
             margin-top: 5rem;
             border-collapse: collapse;
+
+            @include md {
+               width: 100%;
+            }
+
             &-head {
                width: 100%;
                font-family: 'OpenSansBold', Courier, monospace;
                color: $red;               
             }
 
-            th{
+            &-body {
+               width: 100%; 
+               font-size: 16px;
+               line-height: 5rem;
+            }
+
+            th, td{
                line-height: 5rem;
                border-bottom: 1px solid $light-grey2; 
-               text-align: left;  
+               text-align: left; 
+               font-size: 16px; 
                &:first-child {
                   width: 100%;
                   padding-left: 21px;
                }    
                &:last-child {
                   width: 102px;
+                  font-family: 'OpenSansBold', Courier, monospace;
+
                }        
             }
          }
