@@ -1,0 +1,112 @@
+@use "../variables" as *;
+
+.lorem {
+   width: 100%;
+   padding: 80px 0;
+   background: url("../../assets/img/background.png") no-repeat center center;
+
+   &__title {
+      font-size: 7rem;
+      line-height: 7rem;
+      text-align: center;
+
+      &--gold {
+         background: $gold;
+         background-clip: text;
+         -webkit-text-fill-color: transparent;
+      }
+   }
+
+   .form-wrapper {
+      width: 65rem;
+      background-color: $white;
+      padding: 40px;
+      margin: 32px auto 0;
+      border-radius: 10px;
+
+      .form {
+         &__title {
+            font-size: 2.4rem;
+            text-align: center;
+            font-weight: 700;
+         }
+
+         &__fields {
+            margin-top: 32px;
+            flex-wrap: wrap;
+            gap: 16px;
+
+            .form-field {
+               width: 29.1rem;
+               padding: 10px 12px;
+               color: $black-grey;
+               font-size: 16px;
+               border: 1px solid $black-grey;
+               border-radius: 5px;
+            }
+
+            &-select {
+               width: 317px !important;
+
+               &-option {
+                  font-size: 14px;
+               }
+            }
+
+            &-phone {
+               gap: 10px;
+               &-select {
+                  width: 63px !important;
+                  appearance: none;
+               }
+
+               &-input {
+                  width: 218px !important;
+               }
+            }
+         }
+
+         &__policy {
+            margin-top: 24px;
+            justify-content: flex-start;
+            gap: 8px;
+
+            &-input {
+               border: 1px solid $black-grey;
+               border-radius: 2px;
+            }
+
+            &-text {
+               font-size: 12px;
+               color: $black-grey;
+
+               &--red {
+                  color: $red;
+               }
+            }
+         }
+
+         &__btn {
+            display: block;
+            margin: 4rem auto 0;
+            padding: 14px 0;
+            width: 307px;
+            background-color: $green;
+            border: 1px solid $green;
+            color: $white;
+            text-align: center;
+            font-weight: 700;
+
+            &:hover {
+               border: 1px solid $green;
+               background-color: transparent;
+               color: $black;
+            }
+
+            &:active {
+               color: $green;
+            }
+         }
+      }
+   }
+}

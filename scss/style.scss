@@ -12,6 +12,7 @@ html {
 
 h1 {
    font-family: 'SofiaSansBold', Courier, monospace;
+   color: $white;
 }
 
 h2 {
@@ -40,6 +41,10 @@ button {
 
 li {
    list-style: none;
+}
+
+input, select, option {
+   font-family: 'OpenSansRegular', Courier, monospace;
 }
 
 body {
