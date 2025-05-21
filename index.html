@@ -125,7 +125,10 @@
                      </select>
                      <input class="form-field form__fields-phone-input" type="text" name="phone" id="phone" placeholder="Phone">
                   </div>
-                  <input class="form-field" type="email" name="email" id="email" placeholder="Email">
+                  <div class="form-field__email">
+                     <input class="form-field" type="email" name="email" id="email" placeholder="Email">
+                     <span id="emailError" class="form-field__error">Invalid email</span>
+                  </div>
                   <select class="form-field form__fields-select" name="experience" id="experience">
                         <option class="form__fields-select-option" value="" disabled selected>Experience</option>
                         <option class="form__fields-select-option" value="yes">Yes</option>
@@ -137,7 +140,7 @@
                <input class="form__policy-input" type="checkbox" name="policy" id="policy">
                <p class="form__policy-text">I have read and accepted the <a class="form__policy-text--red" href="#">Privacy Policy</a>and <a class="form__policy-text--red" href="#">Terms and Conditions</a></p>
             </div>
-            <button type="submit" class="form__btn">JOIN NOW</button>
+            <button id="submitForm" type="submit" class="form__btn" disabled>JOIN NOW</button>
          </form>
       </section>
 

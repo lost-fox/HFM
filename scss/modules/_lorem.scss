@@ -54,6 +54,30 @@
                }
             }
 
+            .form-field__email {
+               width: 29.1rem;
+               position: relative;
+
+               @include lg {
+                  width: 94%;
+               }
+
+               @include md {
+                  width: 274px;
+               }
+
+                @include sm {
+                  width: 224px;
+               }
+
+               .form-field__error{
+                  display: none;
+                  position: absolute;
+                  color: $red;
+                  margin-top: 2px;
+               }
+            }
+
             &-select {
                width: 317px !important;
 
@@ -127,6 +151,11 @@
 
             &:active {
                color: $green;
+            }
+
+            &:disabled {
+               background-color: $grey;
+               cursor: not-allowed;
             }
 
             @include lg {

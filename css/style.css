@@ -1,6 +1,6 @@
 header .wrapper {
   max-width: 1320px;
-  padding: 22px 0;
+  padding: 15px 0 22px;
   margin: 0 auto;
 }
 @media (max-width: 1440px) {
@@ -169,6 +169,31 @@ header .wrapper .header-main-bnt__burger {
     width: 100%;
   }
 }
+.lorem .form-wrapper .form__fields .form-field__email {
+  width: 29.1rem;
+  position: relative;
+}
+@media (max-width: 1440px) {
+  .lorem .form-wrapper .form__fields .form-field__email {
+    width: 94%;
+  }
+}
+@media (max-width: 768px) {
+  .lorem .form-wrapper .form__fields .form-field__email {
+    width: 274px;
+  }
+}
+@media (max-width: 380px) {
+  .lorem .form-wrapper .form__fields .form-field__email {
+    width: 224px;
+  }
+}
+.lorem .form-wrapper .form__fields .form-field__email .form-field__error {
+  display: none;
+  position: absolute;
+  color: #cd0511;
+  margin-top: 2px;
+}
 .lorem .form-wrapper .form__fields-select {
   width: 317px !important;
 }
@@ -234,6 +259,10 @@ header .wrapper .header-main-bnt__burger {
 }
 .lorem .form-wrapper .form__btn:active {
   color: #179149;
+}
+.lorem .form-wrapper .form__btn:disabled {
+  background-color: #5a5a5a;
+  cursor: not-allowed;
 }
 @media (max-width: 1440px) {
   .lorem .form-wrapper .form__btn {
@@ -773,6 +802,10 @@ body {
 header, footer {
   background-color: #161616;
   color: #eeeeee;
+}
+
+input, select {
+  cursor: pointer;
 }
 
 a:hover {

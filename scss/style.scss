@@ -61,6 +61,10 @@ header, footer {
    color: $dark-white;
 }
 
+input, select {
+   cursor: pointer;
+}
+
 a:hover {
    text-decoration: underline;
 }
