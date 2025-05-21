@@ -65,6 +65,17 @@
          padding: 15px;
          background-color: $green;
          color: $white;
+         border: 1px solid $green;
+
+         &:hover {
+            border: 1px solid $green;
+            background-color: transparent;
+            color: $black;
+         }
+
+         &:active {
+            color: $green;
+         }
       }
       
       &__text {

@@ -1,0 +1,136 @@
+@use "../variables" as *;
+.sed {
+   flex-direction: column;
+   gap: 8rem;
+
+   &__title {
+      padding-top: 12rem;
+      font-size: 5rem;
+      line-height: 5rem;
+      text-align: center;
+   }
+
+   &-main {
+      gap: 7rem;
+
+      &__cards {
+         flex-direction: column;
+         gap: 20px;
+
+         &-card {
+            width: 600px;
+            padding: 30px 35px;
+            background-color: $white;
+            border-radius: 20px;
+            justify-content: flex-start !important;
+            gap: 32px;
+
+            &-img {
+               display: block;
+            }
+
+            &-info {
+               flex-direction: column;
+               align-items: flex-start !important;
+               gap: 25px;
+
+               &-text{
+                font-size: 18px;
+                text-transform: uppercase;
+
+                &--gold {
+                  font-family: 'OpenSansBold', Courier, monospace;
+                  background: $gold;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                }
+
+                &--small {
+                  text-transform: lowercase;
+                }
+
+                &--grey {
+                  color: $light-grey;
+                }
+
+                &--bold {
+                  font-family: 'OpenSansBold', Courier, monospace;
+                }
+
+                &--red {
+                  color: $red;
+                }
+               }
+            }
+         }
+      }
+
+      &__info {
+         &-title {
+            font-size: 25px;
+            font-family: 'OpenSansBold', Courier, monospace;
+            text-transform: uppercase;
+         }
+
+         &-table {
+            width: 650px;
+            margin-top: 5rem;
+            border-collapse: collapse;
+            &-head {
+               width: 100%;
+               font-family: 'OpenSansBold', Courier, monospace;
+               color: $red;               
+            }
+
+            th{
+               line-height: 5rem;
+               border-bottom: 1px solid $light-grey2; 
+               text-align: left;  
+               &:first-child {
+                  width: 100%;
+                  padding-left: 21px;
+               }    
+               &:last-child {
+                  width: 102px;
+               }        
+            }
+         }
+
+         &-text {
+            margin-top: 22px;
+            color: $light-grey;
+            font-size: 12px;
+         }
+      }
+   }
+
+   &-btn {
+       margin: 0 auto;
+
+      &__btn{
+         font-family: 'OpenSansBold', Courier, monospace;
+         width: 300px;
+         padding: 15px;
+         background-color: $green;
+         color: $white;
+         border: 1px solid $green;
+
+         &:hover {
+            border: 1px solid $green;
+            background-color: transparent;
+            color: $black;
+         }
+
+         &:active {
+            color: $green;
+         }
+      }
+      
+      &__text {
+         margin-top: 5px;
+         font-size: 12px;
+         color: $light-grey;
+         text-align: center;
+      }
+   }
+}
