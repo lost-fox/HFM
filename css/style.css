@@ -111,7 +111,7 @@ header .wrapper .header-main-bnt__burger {
 @media (max-width: 1024px) {
   header .wrapper .header-main-bnt__burger {
     display: block;
-    background: url(/assets/icon/menu_icon.png) no-repeat center center;
+    background: url(./assets/icon/menu_icon.png) no-repeat center center;
     width: 50px;
     height: 50px;
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(196deg) brightness(106%) contrast(104%);
@@ -121,7 +121,7 @@ header .wrapper .header-main-bnt__burger {
 .lorem {
   width: 100%;
   padding: 80px 0;
-  background: url(/assets/img/background.png) no-repeat center center;
+  background: url(../assets/img/background.png) no-repeat center center;
   background-size: cover;
 }
 .lorem__title {
@@ -727,10 +727,10 @@ footer .footer-wrapper .footer-media__download-btn:active {
   border: 1px solid #179149;
 }
 footer .footer-wrapper .footer-media__download-btn--apple {
-  background: url(/assets/img/app-store.png) no-repeat center center;
+  background: url(../assets/img/app-store.png) no-repeat center center;
 }
 footer .footer-wrapper .footer-media__download-btn--google {
-  background: url(/assets/img/google-play.png) no-repeat center center;
+  background: url(../assets/img/google-play.png) no-repeat center center;
 }
 footer .footer-wrapper .footer-risk__title {
   font-family: "OpenSansBold", Courier, monospace;
