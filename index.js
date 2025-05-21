@@ -9,4 +9,3 @@ const isShowMenu = () => {
 btnBurgerMenu.addEventListener('click', isShowMenu);
 closeBurgerMenu.addEventListener('click', isShowMenu);
 
-console.log(burgerMenu);
