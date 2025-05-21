@@ -61,7 +61,7 @@ header .wrapper .header-main-nav {
 header .wrapper .header-main-nav__nav {
   gap: 33px;
 }
-header .wrapper .header-main-nav__nav-item {
+header .wrapper .header-main-nav__nav-item-link {
   font-size: 16px;
 }
 @media (max-width: 1024px) {
