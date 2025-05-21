@@ -1,0 +1,42 @@
+@use "../variables" as *;
+
+.rutrum {
+   padding-top: 12rem;
+   padding-bottom: 16.7rem;
+   position: relative;
+
+   &__img {
+      position: absolute;
+      top:100%;
+      left:50%;
+      transform:translate(-50%, -100%);
+   }
+
+   &__title {
+      font-size: 5rem;
+      text-align: center;
+   }
+
+   &-main {
+      width: 1075px;
+      margin: 6.3rem auto 0;
+
+      &__items {
+         width: 178px;
+         flex-direction: column;
+         gap: 11.9rem;
+
+         .rutrum-item {
+            &__img {
+               padding-left: 13px;
+            }
+
+            &__text {
+               padding-top: 22px;
+               font-size: 16px;
+               color: $light-black;
+            }
+         }
+      }
+   }
+}

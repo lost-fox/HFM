@@ -18,6 +18,7 @@ h1 {
 h2 {
    font-family: 'SofiaSansRegular', Courier, monospace;
    color: $black;
+   font-weight: 400;
 }
 
 .flex {
@@ -49,7 +50,6 @@ input, select, option {
 
 body {
    max-width: $screen-xl;
-   overflow: hidden;
    margin: 0 auto;
    background-color: $white-grey;
    color: $light-black;

@@ -163,6 +163,39 @@ header .wrapper .header-main-bnt__register:active {
   color: #179149;
 }
 
+.rutrum {
+  padding-top: 12rem;
+  padding-bottom: 16.7rem;
+  position: relative;
+}
+.rutrum__img {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+.rutrum__title {
+  font-size: 5rem;
+  text-align: center;
+}
+.rutrum-main {
+  width: 1075px;
+  margin: 6.3rem auto 0;
+}
+.rutrum-main__items {
+  width: 178px;
+  flex-direction: column;
+  gap: 11.9rem;
+}
+.rutrum-main__items .rutrum-item__img {
+  padding-left: 13px;
+}
+.rutrum-main__items .rutrum-item__text {
+  padding-top: 22px;
+  font-size: 16px;
+  color: #161616;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -180,6 +213,7 @@ h1 {
 h2 {
   font-family: "SofiaSansRegular", Courier, monospace;
   color: #000000;
+  font-weight: 400;
 }
 
 .flex {
@@ -211,7 +245,6 @@ input, select, option {
 
 body {
   max-width: 1800px;
-  overflow: hidden;
   margin: 0 auto;
   background-color: #f4f4f4;
   color: #161616;
