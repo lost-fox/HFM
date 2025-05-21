@@ -1,0 +1,69 @@
+@use "../variables" as *;
+
+footer {
+   padding: 4.8rem 0 11.5rem;
+
+   .footer-wrapper {
+     max-width: 1320px;
+     padding: 0 2rem;
+     margin: 0 auto;
+     align-items: flex-start;
+
+     @include md {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+     }
+
+     .footer-media {
+         width: 296px;
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 10px;
+
+         &__title {
+            font-family: 'OpenSansBold', Courier, monospace;
+            font-size: 16px;
+         }
+
+         &__download {
+            gap: 9px;
+
+            &-btn {
+               width: 116px;
+               height: 39px;
+               &:hover {
+                  border: 1px solid $white;
+               }
+
+               &:active {
+                  border: 1px solid $green;
+               }
+            }
+
+            &-btn--apple {
+               background: url(../../assets/img/app-store.png) no-repeat center center;
+            }
+
+             &-btn--google {
+               background: url(../../assets/img/google-play.png) no-repeat center center;
+            }
+         }
+     }
+
+     .footer-risk {
+      &__title {
+         font-family: 'OpenSansBold', Courier, monospace;
+         font-size: 16px;
+         line-height: 26px;
+      }
+
+      &__text {
+         margin-top: 5.5rem;
+         font-size: 11px;
+         line-height: 14px;
+         color: $black-grey;
+      }
+     }
+   }
+}

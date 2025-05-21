@@ -658,6 +658,63 @@ header .wrapper .header-main-bnt__burger {
   transform: rotate(180deg);
 }
 
+footer {
+  padding: 4.8rem 0 11.5rem;
+}
+footer .footer-wrapper {
+  max-width: 1320px;
+  padding: 0 2rem;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+@media (max-width: 768px) {
+  footer .footer-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+footer .footer-wrapper .footer-media {
+  width: 296px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+footer .footer-wrapper .footer-media__title {
+  font-family: "OpenSansBold", Courier, monospace;
+  font-size: 16px;
+}
+footer .footer-wrapper .footer-media__download {
+  gap: 9px;
+}
+footer .footer-wrapper .footer-media__download-btn {
+  width: 116px;
+  height: 39px;
+}
+footer .footer-wrapper .footer-media__download-btn:hover {
+  border: 1px solid #ffffff;
+}
+footer .footer-wrapper .footer-media__download-btn:active {
+  border: 1px solid #179149;
+}
+footer .footer-wrapper .footer-media__download-btn--apple {
+  background: url(../../assets/img/app-store.png) no-repeat center center;
+}
+footer .footer-wrapper .footer-media__download-btn--google {
+  background: url(../../assets/img/google-play.png) no-repeat center center;
+}
+footer .footer-wrapper .footer-risk__title {
+  font-family: "OpenSansBold", Courier, monospace;
+  font-size: 16px;
+  line-height: 26px;
+}
+footer .footer-wrapper .footer-risk__text {
+  margin-top: 5.5rem;
+  font-size: 11px;
+  line-height: 14px;
+  color: #999999;
+}
+
 * {
   margin: 0;
   padding: 0;
