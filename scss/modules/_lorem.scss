@@ -25,9 +25,13 @@
       margin: 32px auto 0;
       border-radius: 10px;
 
+      @include md {
+         width: 50rem;
+      }
+
       .form {
          &__title {
-            font-size: 2.4rem;
+            font-size: 24px;
             text-align: center;
             font-weight: 700;
          }
@@ -123,6 +127,10 @@
 
             &:active {
                color: $green;
+            }
+
+            @include lg {
+               width: 100%;
             }
          }
       }

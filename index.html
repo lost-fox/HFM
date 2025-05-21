@@ -6,9 +6,34 @@
    <link rel="stylesheet" href="css/fonts.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="shortcut icon" href="assets/icon/favicon.png" type="image/x-icon">
+   <script src="index.js" defer></script>
    <title>HFM</title>
 </head>
 <body>
+
+   <div class="burger-menu" style="display: none;">
+      <button class="burger-menu__close" ></button>
+      <nav class="burger-menu__nav flex">
+         <a class="burger-menu__nav-link" href="#">Markets</a>
+         <a class="burger-menu__nav-link" href="#">Trading</a>
+         <a class="burger-menu__nav-link" href="#">Investing</a>
+         <a class="burger-menu__nav-link" href="#">Tools & Education</a>
+         <a class="burger-menu__nav-link" href="#">Company</a>
+         <a class="burger-menu__nav-link" href="#">Contact us</a>
+         <a class="burger-menu__nav-link" href="#">Partner with us</a>
+      </nav>
+      <div class="burger-menu__btn flex">
+         <button class="burger-menu__btn-login">Login</button>
+         <button class="burger-menu__btn-register">Register</button>
+         <button class="burger-menu__btn-download flex">
+              <img class="burger-menu__btn-download-img" src="assets/icon/mobile.png" alt="mobile icon">
+               <p class="burger-menu__btn-download-text">Download App</p></button>
+         <button class="burger-menu__btn-language">
+            <img class="header-info__actions-links-switch-img" src="assets/icon/en-flag.png" alt="language en-flag">
+         </button>
+      </div>
+   </div>
+
    <header>
       <div class="wrapper">
          <div class="header-info flex">
@@ -70,78 +95,80 @@
             <div class="header-main-bnt flex">
                <button class="header-main-bnt__login">Login</button>
                <button class="header-main-bnt__register">Register</button>
+               <button class="header-main-bnt__burger" ></button>
             </div>
          </div>
       </div>
    </header>
+   <main>
+      <section class="lorem">
+         <h1 class="lorem__title"><span class="lorem__title--gold">Lorem ipsum dolor</span><br> sit amet tosik </h1>
 
-   <section class="lorem">
-      <h1 class="lorem__title"><span class="lorem__title--gold">Lorem ipsum dolor</span><br> sit amet tosik </h1>
-
-      <form class="form-wrapper">
-         <div class="form">
-            <h3 class="form__title">Lorem ipsum dolor sit amet</h3>
-            <div class="form__fields flex">
-               <input class="form-field" type="text" name="first name" id="first name" placeholder="First Name">
-               <input class="form-field" type="text" name="last name" id="last name" placeholder="Last Name">
-               <select class="form-field form__fields-select" name="country" id="country">
-                  <option class="form__fields-select-option" value="" disabled selected>Country</option>
-                  <option class="form__fields-select-option" value="us">US</option>
-                  <option class="form__fields-select-option" value="uk">UK</option>
-                  <option class="form__fields-select-option" value="india">India</option>
-               </select>
-               <div class="form__fields-phone flex">
-                   <select class="form-field form__fields-phone-select" name="code" id="code">
-                     <option class="form__fields-select-option" value="" disabled selected>Code</option>
-                     <option class="form__fields-select-option" value="+1">+1</option>
-                     <option class="form__fields-select-option" value="+44">+44</option>
-                     <option class="form__fields-select-option" value="+91">+91</option>
-                   </select>
-                  <input class="form-field form__fields-phone-input" type="text" name="phone" id="phone" placeholder="Phone">
+         <form class="form-wrapper">
+            <div class="form">
+               <h3 class="form__title">Lorem ipsum dolor sit amet</h3>
+               <div class="form__fields flex">
+                  <input class="form-field" type="text" name="first name" id="first name" placeholder="First Name">
+                  <input class="form-field" type="text" name="last name" id="last name" placeholder="Last Name">
+                  <select class="form-field form__fields-select" name="country" id="country">
+                     <option class="form__fields-select-option" value="" disabled selected>Country</option>
+                     <option class="form__fields-select-option" value="us">US</option>
+                     <option class="form__fields-select-option" value="uk">UK</option>
+                     <option class="form__fields-select-option" value="india">India</option>
+                  </select>
+                  <div class="form__fields-phone flex">
+                     <select class="form-field form__fields-phone-select" name="code" id="code">
+                        <option class="form__fields-select-option" value="" disabled selected>Code</option>
+                        <option class="form__fields-select-option" value="+1">+1</option>
+                        <option class="form__fields-select-option" value="+44">+44</option>
+                        <option class="form__fields-select-option" value="+91">+91</option>
+                     </select>
+                     <input class="form-field form__fields-phone-input" type="text" name="phone" id="phone" placeholder="Phone">
+                  </div>
+                  <input class="form-field" type="email" name="email" id="email" placeholder="Email">
+                  <select class="form-field form__fields-select" name="experience" id="experience">
+                        <option class="form__fields-select-option" value="" disabled selected>Experience</option>
+                        <option class="form__fields-select-option" value="yes">Yes</option>
+                        <option class="form__fields-select-option" value="no">No</option>
+                  </select>
                </div>
-               <input class="form-field" type="email" name="email" id="email" placeholder="Email">
-               <select class="form-field form__fields-select" name="experience" id="experience">
-                     <option class="form__fields-select-option" value="" disabled selected>Experience</option>
-                     <option class="form__fields-select-option" value="yes">Yes</option>
-                     <option class="form__fields-select-option" value="no">No</option>
-               </select>
             </div>
-         </div>
-         <div class="form__policy flex">
-            <input class="form__policy-input" type="checkbox" name="policy" id="policy">
-            <p class="form__policy-text">I have read and accepted the <a class="form__policy-text--red" href="#">Privacy Policy</a>and <a class="form__policy-text--red" href="#">Terms and Conditions</a></p>
-         </div>
-         <button type="submit" class="form__btn">JOIN NOW</button>
-      </form>
-   </section>
+            <div class="form__policy flex">
+               <input class="form__policy-input" type="checkbox" name="policy" id="policy">
+               <p class="form__policy-text">I have read and accepted the <a class="form__policy-text--red" href="#">Privacy Policy</a>and <a class="form__policy-text--red" href="#">Terms and Conditions</a></p>
+            </div>
+            <button type="submit" class="form__btn">JOIN NOW</button>
+         </form>
+      </section>
 
-   <section class="rutrum">
-      <img class="rutrum__img" src="assets/img/phones.png" alt="phone img">
-      <h2 class="rutrum__title">Quisque rutrum</h2>
-      <div class="rutrum-main flex">
-         <div class="rutrum-main__items flex">
-            
-            <div class="rutrum-item">
-               <img class="rutrum-item__img" src="assets/icon/person.png" alt="person icon">
-               <p class="rutrum-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+      <section class="rutrum">
+         <img class="rutrum__img" src="assets/img/phones.png" alt="phone img">
+         <h2 class="rutrum__title">Quisque rutrum</h2>
+         <div class="rutrum-main flex">
+            <div class="rutrum-main__items flex">
+               
+               <div class="rutrum-item">
+                  <img class="rutrum-item__img" src="assets/icon/person.png" alt="person icon">
+                  <p class="rutrum-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+               </div>
+               <div class="rutrum-item">
+                  <img class="rutrum-item__img" src="assets/icon/money.png" alt="money icon">
+                  <p class="rutrum-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+               </div>
             </div>
-            <div class="rutrum-item">
-               <img class="rutrum-item__img" src="assets/icon/money.png" alt="money icon">
-               <p class="rutrum-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-            </div>
-         </div>
 
-         <div class="rutrum-main__items flex">
-             <div class="rutrum-item">
-               <img class="rutrum-item__img" src="assets/icon/trading.png" alt="trading icon">
-               <p class="rutrum-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-            </div>
-            <div class="rutrum-item">
-               <img class="rutrum-item__img" src="assets/icon/person.png" alt="person icon">
-               <p class="rutrum-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+            <div class="rutrum-main__items flex">
+               <div class="rutrum-item">
+                  <img class="rutrum-item__img" src="assets/icon/trading.png" alt="trading icon">
+                  <p class="rutrum-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+               </div>
+               <div class="rutrum-item">
+                  <img class="rutrum-item__img" src="assets/icon/person.png" alt="person icon">
+                  <p class="rutrum-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+               </div>
             </div>
          </div>
-      </div>
-   </section>
+      </section>
+   </main>
 </body>
 </html>
