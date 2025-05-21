@@ -4,6 +4,7 @@
    width: 100%;
    padding: 80px 0;
    background: url("../../assets/img/background.png") no-repeat center center;
+   background-size: cover;
 
    &__title {
       font-size: 7rem;
@@ -43,10 +44,18 @@
                font-size: 16px;
                border: 1px solid $black-grey;
                border-radius: 5px;
+
+               @include lg {
+                  width: 100%;
+               }
             }
 
             &-select {
                width: 317px !important;
+
+               @include lg {
+                  width: 100% !important;
+               }
 
                &-option {
                   font-size: 14px;
@@ -55,6 +64,11 @@
 
             &-phone {
                gap: 10px;
+
+               @include lg {
+                  width: 100% !important;
+               }
+
                &-select {
                   width: 63px !important;
                   appearance: none;
@@ -62,6 +76,10 @@
 
                &-input {
                   width: 218px !important;
+
+               @include lg {
+                  width: 100% !important;
+                  }
                }
             }
          }
@@ -110,3 +128,4 @@
       }
    }
 }
+

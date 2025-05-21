@@ -75,6 +75,7 @@ header .wrapper .header-main-bnt__register:active {
   width: 100%;
   padding: 80px 0;
   background: url("../../assets/img/background.png") no-repeat center center;
+  background-size: cover;
 }
 .lorem__title {
   font-size: 7rem;
@@ -111,8 +112,18 @@ header .wrapper .header-main-bnt__register:active {
   border: 1px solid #999999;
   border-radius: 5px;
 }
+@media (max-width: 1440px) {
+  .lorem .form-wrapper .form__fields .form-field {
+    width: 100%;
+  }
+}
 .lorem .form-wrapper .form__fields-select {
   width: 317px !important;
+}
+@media (max-width: 1440px) {
+  .lorem .form-wrapper .form__fields-select {
+    width: 100% !important;
+  }
 }
 .lorem .form-wrapper .form__fields-select-option {
   font-size: 14px;
@@ -120,12 +131,22 @@ header .wrapper .header-main-bnt__register:active {
 .lorem .form-wrapper .form__fields-phone {
   gap: 10px;
 }
+@media (max-width: 1440px) {
+  .lorem .form-wrapper .form__fields-phone {
+    width: 100% !important;
+  }
+}
 .lorem .form-wrapper .form__fields-phone-select {
   width: 63px !important;
   appearance: none;
 }
 .lorem .form-wrapper .form__fields-phone-input {
   width: 218px !important;
+}
+@media (max-width: 1440px) {
+  .lorem .form-wrapper .form__fields-phone-input {
+    width: 100% !important;
+  }
 }
 .lorem .form-wrapper .form__policy {
   margin-top: 24px;
@@ -244,7 +265,6 @@ input, select, option {
 }
 
 body {
-  max-width: 1800px;
   margin: 0 auto;
   background-color: #f4f4f4;
   color: #161616;
@@ -262,6 +282,22 @@ a:hover {
 
 a:active {
   font-weight: 700;
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 6px;
+  }
+}
+@media (max-width: 380px) {
+  html {
+    font-size: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -49,7 +49,6 @@ input, select, option {
 }
 
 body {
-   max-width: $screen-xl;
    margin: 0 auto;
    background-color: $white-grey;
    color: $light-black;
@@ -66,4 +65,18 @@ a:hover {
 }
 a:active {
    font-weight: 700;
+}
+
+html {
+   @include lg {
+      font-size: 8px;
+   }
+
+    @include md {
+      font-size: 6px;
+   }
+
+     @include sm {
+      font-size: 5px;
+   }
 }
