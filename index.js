@@ -6,6 +6,14 @@ const emailInput = document.getElementById('email');
 const emailError = document.getElementById('emailError');
 const submitBtn = document.getElementById('submitForm');
 
+const countrySelect = document.getElementById("country");
+const codeInput = document.getElementById("code");
+
+  const countryCodes = {
+    US: "+1",
+    UK: "+44",
+    IN: "+91"
+  };
 
 const isShowMenu = () => {
   burgerMenu.style.display = burgerMenu.style.display === 'none' ? 'block' : 'none';
@@ -29,4 +37,10 @@ emailInput.addEventListener('input', () => {
     emailError.style.display = 'inline';
     submitBtn.disabled = true;
   }
+});
+
+countrySelect.addEventListener("change", () => {
+  const selectedCountry = countrySelect.value;
+  const countryCode = countryCodes[selectedCountry] || "";
+  codeInput.value = countryCode;
 });
