@@ -1,0 +1,138 @@
+@use "../variables" as *;
+
+header {
+   .wrapper {
+      max-width: 1320px;
+      padding: 15px 0 22px;
+      margin: 0 auto;
+
+      @include lg {
+         max-width: 100%;
+         padding: 22px 20px;
+      }
+
+      .header-info {
+         &__text {
+            color: $light-grey;
+            font-size: 10px;
+         }
+
+         &__actions {
+            gap: 26px;
+
+            &-btn {
+               border: 1px solid $grey;
+               padding: 5px 10px;
+
+               &-text {
+                  margin-left: 9px;
+                  font-size: 14px;
+                  color: $dark-white;
+               }
+
+               &:hover {
+                  border-color: $white;
+               }
+               &:active {
+                  background-color: $dark-grey;
+               }
+
+               @media (max-width: 1024px) {
+                  display: none;
+               }
+            }
+
+            &-links {
+              gap: 15px; 
+
+              .line {
+                  height: 16px;
+                  width: 1px;
+                  background-color: $dark-grey;
+              }
+
+              &-link {
+               font-size: 14px;
+              }
+
+              @media (max-width: 1024px) {
+                  display: none;
+               }
+            }
+         }
+      }
+
+      .header-main {
+         margin-top: 1rem;
+         &-nav {
+            gap: 10rem;
+
+            &__nav{
+               gap: 33px;
+
+               &-item-link {
+                  font-size: 16px;
+               }
+
+               @media (max-width: 1024px) {
+                   display: none;
+               }
+            }
+         }
+
+         &-bnt {
+            gap: 17px;
+
+            &__login {
+               padding: 5px 20px;
+               border: 1px solid $red;
+               font-size: 16px;
+
+               &:hover {
+                  background-color: $dark-grey;
+               }
+
+               &:active {
+                  color: $red;
+               }
+
+                @media (max-width: 1024px) {
+                  display: none;
+               }
+            }
+
+            &__register {
+               padding: 5px 20px;
+               background-color: $green;
+               border: 1px solid $green;
+               font-size: 16px;
+
+                &:hover {
+                  background-color: $light-black;
+               }
+
+               &:active {
+                  color: $green;
+               }
+
+                @media (max-width: 1024px) {
+                  display: none;
+               }
+            }
+
+            &__burger {
+               display: none;
+               
+
+               @media (max-width: 1024px) {
+                  display: block;
+                  background: url(../assets/icon/menu_icon.png) no-repeat center center;
+                  width: 50px;
+                  height: 50px;
+                  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(196deg) brightness(106%) contrast(104%);
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,66 @@
+@use "../variables" as *;
+
+.rutrum {
+   padding-top: 12rem;
+   padding-bottom: 16.7rem;
+   position: relative;
+
+   @include md {
+      padding-bottom: 10rem;
+   }
+
+   &__img {
+      position: absolute;
+      top:100%;
+      left:50%;
+      transform:translate(-50%, -100%);
+
+      @include lg {
+         width: 40%;
+      }
+
+      @include md {
+         width: 30%;
+      }
+
+      @media (max-width: 600px) {
+         display: none;
+      }
+   }
+
+   &__title {
+      font-size: 5rem;
+      text-align: center;
+   }
+
+   &-main {
+      max-width: 1075px;
+      margin: 6.3rem auto 0;
+
+      @include lg {
+         padding: 0 50px;
+      }
+
+      @include md {
+         padding: 0 20px;
+      }
+
+      &__items {
+         width: 178px;
+         flex-direction: column;
+         gap: 11.9rem;
+
+         .rutrum-item {
+            &__img {
+               padding-left: 13px;
+            }
+
+            &__text {
+               padding-top: 22px;
+               font-size: 16px;
+               color: $light-black;
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="assets/icon/favicon.png" type="image/x-icon">
+   <script src="index.js" defer></script>
+   <title>HFM</title>
+</head>
+<body>
+
+   <div class="burger-menu" style="display: none;">
+      <button class="burger-menu__close" ></button>
+      <nav class="burger-menu__nav flex">
+         <a class="burger-menu__nav-link" href="#">Markets</a>
+         <a class="burger-menu__nav-link" href="#">Trading</a>
+         <a class="burger-menu__nav-link" href="#">Investing</a>
+         <a class="burger-menu__nav-link" href="#">Tools & Education</a>
+         <a class="burger-menu__nav-link" href="#">Company</a>
+         <a class="burger-menu__nav-link" href="#">Contact us</a>
+         <a class="burger-menu__nav-link" href="#">Partner with us</a>
+      </nav>
+      <div class="burger-menu__btn flex">
+         <button class="burger-menu__btn-login">Login</button>
+         <button class="burger-menu__btn-register">Register</button>
+         <button class="burger-menu__btn-download flex">
+              <img class="burger-menu__btn-download-img" src="assets/icon/mobile.png" alt="mobile icon">
+               <span class="burger-menu__btn-download-text">Download App</span></button>
+         <button class="burger-menu__btn-language">
+            <img class="header-info__actions-links-switch-img" src="assets/icon/en-flag.png" alt="language en-flag">
+         </button>
+      </div>
+   </div>
+
+   <header>
+      <div class="wrapper">
+         <div class="header-info flex">
+            <p class="header-info__text">Member of HF Markets Group</p>
+            <div class="header-info__actions flex">
+               <button class="header-info__actions-btn flex">
+                  <img class="header-info__actions-btn-img" src="assets/icon/mobile.png" alt="mobile icon">
+                  <span class="header-info__actions-btn-text">Download App</span>
+               </button>
+
+               <div class="header-info__actions-links flex">
+                  <a class="header-info__actions-links-link" href="#">Contact us</a>
+                  <div class="line"></div>
+                  <a class="header-info__actions-links-link" href="#">Partner with us</a>
+                  <div class="line"></div>
+                  <button class="header-info__actions-links-switch">
+                     <img class="header-info__actions-links-switch-img" src="assets/icon/en-flag.png" alt="language en-flag">
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="header-main flex">
+            <div class="header-main-nav flex">
+               <img src="assets/icon/logo.png" alt="logo" class="header-main-nav__logo">
+               <nav class="header-main-nav__nav flex">
+                  
+                     <a class="header-main-nav__nav-item-link" href="#">
+                        Markets
+                     </a>
+                  
+                     <a class="header-main-nav__nav-item-link" href="#">
+                        Trading
+                     </a>
+
+                     <a class="header-main-nav__nav-item-link" href="#">
+                        Investing
+                     </a>
+
+                     <a class="header-main-nav__nav-item-link" href="#">
+                        Tools & Education
+                     </a>
+
+                     <a class="header-main-nav__nav-item-link" href="#">
+                        Company
+                     </a>
+               </nav>
+            </div>
+
+            <div class="header-main-bnt flex">
+               <button class="header-main-bnt__login">Login</button>
+               <button class="header-main-bnt__register">Register</button>
+               <button class="header-main-bnt__burger" ></button>
+            </div>
+         </div>
+      </div>
+   </header>
+   <main>
+      <section class="lorem">
+         <h1 class="lorem__title"><span class="lorem__title--gold">Lorem ipsum dolor</span><br> sit amet tosik </h1>
+
+         <form class="form-wrapper">
+            <div class="form">
+               <h3 class="form__title">Lorem ipsum dolor sit amet</h3>
+               <div class="form__fields flex">
+                  <input class="form-field" type="text" name="first name" id="firstName" placeholder="First Name">
+                  <input class="form-field" type="text" name="last name" id="lastName" placeholder="Last Name">
+                  <select class="form-field form__fields-select" name="country" id="country">
+                     <option class="form__fields-select-option" value="" disabled selected>Country</option>
+                     <option class="form__fields-select-option" value="US">US</option>
+                     <option class="form__fields-select-option" value="UK">UK</option>
+                     <option class="form__fields-select-option" value="IN">India</option>
+                  </select>
+                  <div class="form__fields-phone flex">
+                     <select class="form-field form__fields-phone-select" name="code" id="code">
+                        <option class="form__fields-select-option" value="" disabled selected>Code</option>
+                        <option class="form__fields-select-option" value="+1">+1</option>
+                        <option class="form__fields-select-option" value="+44">+44</option>
+                        <option class="form__fields-select-option" value="+91">+91</option>
+                     </select>
+                     <input class="form-field form__fields-phone-input" type="text" name="phone" id="phone" placeholder="Phone">
+                  </div>
+                  <div class="form-field__email">
+                     <input class="form-field" type="email" name="email" id="email" placeholder="Email">
+                     <span id="emailError" class="form-field__error">Invalid email</span>
+                  </div>
+                  <select class="form-field form__fields-select" name="experience" id="experience">
+                        <option class="form__fields-select-option" value="" disabled selected>Experience</option>
+                        <option class="form__fields-select-option" value="yes">Yes</option>
+                        <option class="form__fields-select-option" value="no">No</option>
+                  </select>
+               </div>
+            </div>
+            <div class="form__policy flex">
+               <input class="form__policy-input" type="checkbox" name="policy" id="policy">
+               <p class="form__policy-text">I have read and accepted the <a class="form__policy-text--red" href="#">Privacy Policy</a>and <a class="form__policy-text--red" href="#">Terms and Conditions</a></p>
+            </div>
+            <button id="submitForm" type="submit" class="form__btn" disabled>JOIN NOW</button>
+         </form>
+      </section>
+
+      <section class="rutrum">
+         <img class="rutrum__img" src="assets/img/phones.png" alt="phone img">
+         <h2 class="rutrum__title">Quisque rutrum</h2>
+         <div class="rutrum-main flex">
+            <div class="rutrum-main__items flex">
+               
+               <div class="rutrum-item">
+                  <img class="rutrum-item__img" src="assets/icon/person.png" alt="person icon">
+                  <p class="rutrum-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+               </div>
+               <div class="rutrum-item">
+                  <img class="rutrum-item__img" src="assets/icon/money.png" alt="money icon">
+                  <p class="rutrum-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+               </div>
+            </div>
+
+            <div class="rutrum-main__items flex">
+               <div class="rutrum-item">
+                  <img class="rutrum-item__img" src="assets/icon/trading.png" alt="trading icon">
+                  <p class="rutrum-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+               </div>
+               <div class="rutrum-item">
+                  <img class="rutrum-item__img" src="assets/icon/person.png" alt="person icon">
+                  <p class="rutrum-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="prizes flex">
+         <h2 class="prizes__title">PRIZES</h2>
+         <div class="prizes-items flex">
+            <div class="prizes-items__item">
+               <img  class="prizes-items__item-img" src="assets/icon/medal-01.png" alt="medal icon">
+               <p  class="prizes-items__item-money">
+                  $1000
+               </p>
+               <p  class="prizes-items__item-prize">
+                  Cras dapibus &
+                  Cras dapibus
+               </p>
+            </div>
+
+            <div class="prizes-items__item">
+               <img  class="prizes-items__item-img" src="assets/icon/medal-02.png" alt="medal icon">
+               <p  class="prizes-items__item-money">
+                  $1000
+               </p>
+               <p  class="prizes-items__item-prize">
+                  Cras dapibus 
+               </p>
+            </div>
+
+            <div class="prizes-items__item">
+               <img  class="prizes-items__item-img" src="assets/icon/medal-03.png" alt="medal icon">
+               <p  class="prizes-items__item-money">
+                  $1000
+               </p>
+               <p  class="prizes-items__item-prize">
+                  Cras dapibus
+               </p>
+            </div>
+         </div>
+
+         <div class="prizes-btn">
+            <button class="prizes-btn__btn">JOIN NOW</button>
+            <p class="prizes-btn__text">Terms and Conditions apply
+            </p>
+         </div>
+      </section>
+
+      <section class="sed flex">
+         <h2 class="sed__title">Sed fringilla mauris sit</h2>
+         <div class="sed-main flex">
+            <div class="sed-main__cards flex">
+               <div class="sed-main__cards-card flex">
+                  <img class="sed-main__cards-card-img" src="assets/icon/trophy-01.png" alt="trophy icon">
+                  <div class="sed-main__cards-card-info flex">
+                     <p class="sed-main__cards-card-info-text sed-main__cards-card-info-text--gold">
+                        January 1
+                        <sup class="sed-main__cards-card-info-text--small">
+                           st
+                        </sup> 
+                        winner
+                     </p>
+                     <p class="sed-main__cards-card-info-text">JOHN SMITH<br>
+                        <span class="sed-main__cards-card-info-text--grey">
+                        5678987654
+                        </span>
+                     </p>
+                     <p class="sed-main__cards-card-info-text sed-main__cards-card-info-text--bold">
+
+                        TOTAL GAIN OF
+                        <span class="sed-main__cards-card-info-text--red">
+                            16344%
+                        </span>
+                     </p>
+                  </div>
+                  <div class="sed-main__cards-card-banner">
+                     <p class="sed-main__cards-card-banner-prize">1000%</p>
+                  </div>
+               </div>
+
+                <div class="sed-main__cards-card flex">
+                  <img class="sed-main__cards-card-img" src="assets/icon/trophy-02.png" alt="trophy icon">
+                  <div class="sed-main__cards-card-info flex">
+                     <p class="sed-main__cards-card-info-text sed-main__cards-card-info-text--gold">
+                        January 2
+                        <sup class="sed-main__cards-card-info-text--small">
+                           st
+                        </sup> 
+                        winner
+                     </p>
+                     <p class="sed-main__cards-card-info-text">JOHN SMITH<br>
+                        <span class="sed-main__cards-card-info-text--grey">
+                        5678987654
+                        </span>
+                     </p>
+                     <p class="sed-main__cards-card-info-text sed-main__cards-card-info-text--bold">
+
+                        TOTAL GAIN OF
+                        <span class="sed-main__cards-card-info-text--red">
+                            16344%
+                        </span>
+                     </p>
+                  </div>
+                  <div class="sed-main__cards-card-banner">
+                     <p class="sed-main__cards-card-banner-prize">1000%</p>
+                  </div>
+               </div>
+
+                <div class="sed-main__cards-card flex">
+                  <img class="sed-main__cards-card-img" src="assets/icon/trophy-03.png" alt="trophy icon">
+                  <div class="sed-main__cards-card-info flex">
+                     <p class="sed-main__cards-card-info-text sed-main__cards-card-info-text--gold">
+                        January 3
+                        <sup class="sed-main__cards-card-info-text--small">
+                           st
+                        </sup> 
+                        winner
+                     </p>
+                     <p class="sed-main__cards-card-info-text">JOHN SMITH<br>
+                        <span class="sed-main__cards-card-info-text--grey">
+                        5678987654
+                        </span>
+                     </p>
+                     <p class="sed-main__cards-card-info-text sed-main__cards-card-info-text--bold">
+
+                        TOTAL GAIN OF
+                        <span class="sed-main__cards-card-info-text--red">
+                            16344%
+                        </span>
+                     </p>
+                  </div>
+                  <div class="sed-main__cards-card-banner">
+                     <p class="sed-main__cards-card-banner-prize">1000%</p>
+                  </div>
+               </div>
+            </div>
+            <div class="sed-main__info">
+               <h3 class="sed-main__info-title">Aliquam lorem ant</h3>
+               <table class="sed-main__info-table">
+                  <thead class="sed-main__info-table-head">
+                     <tr>
+                        <th>NAME</th>
+                        <th>GAIN</th>
+                     </tr>
+                  </thead>
+                  <tbody class="sed-main__info-table-body">
+                     <tr>
+                        <td>John Smith</td>
+                        <td>1624.19%</td>
+                     </tr>
+
+                     <tr>
+                        <td>John Smith</td>
+                        <td>1083.63%</td>
+                     </tr>
+
+                     <tr>
+                        <td>John Smith</td>
+                        <td>635.47%</td>
+                     </tr>
+
+                     <tr>
+                        <td>John Smith</td>
+                        <td>169.20%</td>
+                     </tr>
+
+                     <tr>
+                        <td>John Smith</td>
+                        <td>158.62%</td>
+                     </tr>
+
+                     <tr>
+                        <td>John Smith</td>
+                        <td>124.50%</td>
+                     </tr>
+
+                     <tr>
+                        <td>John Smith</td>
+                        <td>71.47%</td>
+                     </tr>
+
+                     <tr>
+                        <td>John Smith</td>
+                        <td>67.05%</td>
+                     </tr>
+
+                     <tr>
+                        <td>John Smith</td>
+                        <td>62.30%</td>
+                     </tr>
+
+                     <tr>
+                        <td>John Smith</td>
+                        <td>61.74%</td>
+                     </tr>
+                  </tbody>
+               </table>
+               <p class="sed-main__info-text">Nam quam nunc, blandit vel, luctus pulvinar</p>
+            </div>
+         </div>
+         <div class="sed-btn">
+            <button class="sed-btn__btn">JOIN NOW</button>
+            <p class="sed-btn__text">Terms and Conditions apply
+            </p>
+         </div>
+      </section>
+
+      <section class="faq">
+         <h2 class="faq__title">
+            FAQ
+            <span class="faq__title--small">
+               s
+            </span>
+         </h2>
+
+         <div class="faq-accordion">
+            <details class="faq-accordion__details">
+               <summary class="faq-accordion__details-summary flex">
+                  <h4 class="faq-accordion__details-summary-title">
+                     Question A
+                  </h4>
+                  <img src="assets/icon/arrow.png" alt="arrow icon">
+               </summary>
+              <p class="faq-accordion__details-answer">Answer A</p>
+            </details>
+
+            <details class="faq-accordion__details">
+               <summary class="faq-accordion__details-summary flex">
+                  <h4 class="faq-accordion__details-summary-title">
+                     Question B
+                  </h4>
+                  <img src="assets/icon/arrow.png" alt="arrow icon">
+               </summary>
+              <p class="faq-accordion__details-answer">Answer B</p>
+            </details>
+
+            <details class="faq-accordion__details">
+               <summary class="faq-accordion__details-summary flex">
+                  <h4 class="faq-accordion__details-summary-title">
+                     Question C
+                  </h4>
+                  <img src="assets/icon/arrow.png" alt="arrow icon">
+               </summary>
+              <p class="faq-accordion__details-answer">Answer C</p>
+            </details>
+
+            <details class="faq-accordion__details">
+               <summary class="faq-accordion__details-summary flex">
+                  <h4 class="faq-accordion__details-summary-title">
+                     Question D
+                  </h4>
+                  <img src="assets/icon/arrow.png" alt="arrow icon">
+               </summary>
+              <p class="faq-accordion__details-answer">Answer D</p>
+            </details>
+         </div>
+      </section>
+   </main>
+
+   <footer>
+      <div class="footer-wrapper flex">
+         <div class="footer-media flex">
+            <h4 class="footer-media__title">Find us on</h4>
+            <img class="footer-media__img" src="assets/img/media.png" alt="media">
+            <h4 class="footer-media__title">Download HFM App</h4>
+            <div class="footer-media__download flex">
+               <button class="footer-media__download-btn footer-media__download-btn--apple">
+               </button>
+               <button class="footer-media__download-btn footer-media__download-btn--google">
+               </button>
+            </div>
+         </div>
+         <div class="footer-risk">
+            <h4 class="footer-risk__title">Risk Warning</h4>
+            <p class="footer-risk__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu p</p>
+         </div>
+      </div>
+   </footer>
+</body>
+</html>

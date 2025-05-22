@@ -1,0 +1,87 @@
+@use "./variables" as *;
+@use "./modules";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+   font-size: 10px;
+}
+
+h1 {
+   font-family: 'SofiaSansBold', Courier, monospace;
+   color: $white;
+}
+
+h2 {
+   font-family: 'SofiaSansRegular', Courier, monospace;
+   color: $black;
+   font-weight: 400;
+   text-transform: uppercase;
+}
+
+.flex {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+button, a {
+   cursor: pointer;
+   text-decoration: none;
+   background-color: transparent;
+   border: none;
+   color: $dark-white;
+   font-family: 'OpenSansRegular', Courier, monospace;
+}
+
+button {
+   border-radius: 4px;
+}
+
+li {
+   list-style: none;
+}
+
+input, select, option {
+   font-family: 'OpenSansRegular', Courier, monospace;
+}
+
+body {
+   margin: 0 auto;
+   background-color: $white-grey;
+   color: $light-black;
+   font-family: 'OpenSansRegular', Courier, monospace;
+}
+
+header, footer {
+   background-color: $light-black;
+   color: $dark-white;
+}
+
+input, select {
+   cursor: pointer;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+a:active {
+   font-weight: 700;
+}
+
+html {
+   @include lg {
+      font-size: 8px;
+   }
+
+    @include md {
+      font-size: 6px;
+   }
+
+     @include sm {
+      font-size: 5px;
+   }
+}

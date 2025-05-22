@@ -1,0 +1,50 @@
+@use "../variables" as *;
+
+.faq {
+   margin: 12rem 0;
+
+   &__title {
+      font-weight: 5rem;
+      font-size: 5rem;
+      text-align: center;
+
+      &--small {
+         text-transform: lowercase;
+      }
+   }
+
+   &-accordion {
+      max-width: 1320px;
+      margin: 0 auto;
+
+      &__details {
+         width: 100%;
+         cursor: pointer;
+         border-bottom: 1px solid $grey2;
+         border-radius: 5px;
+
+         &-summary {
+            padding: 19px 5.6rem 19px 7rem ;
+            &-title {
+               font-family: 'OpenSansSemiBold', Courier, monospace;
+               font-size: 20px;
+            }
+         }
+
+         &-answer {
+            border-top: 2px solid $grey3;
+            border-radius: 5px;
+            padding: 19px 5.6rem 19px 7rem ;
+            font-size: 16px;
+         }
+      }
+   }
+
+   details[open]{
+      summary {
+         img {
+            transform: rotate(180deg);
+         }
+      }
+   }
+}
